@@ -34,6 +34,7 @@ ResNet1001 v2|111|     - %|            95.08+-.14 %|  -
 """
 
 from __future__ import print_function
+from wandb import magic
 import keras
 from keras.layers import Dense, Conv2D, BatchNormalization, Activation
 from keras.layers import AveragePooling2D, Input, Flatten
@@ -51,7 +52,7 @@ import os
 # Training parameters
 batch_size = 32  # orig paper trained all networks with batch_size=128
 epochs = 200
-data_augmentation = True
+data_augmentation = False
 num_classes = 10
 
 # Subtracting pixel mean improves accuracy

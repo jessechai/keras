@@ -14,6 +14,7 @@ Gets to 97.2% test accuracy after 20 epochs.
 '''
 from __future__ import absolute_import
 from __future__ import print_function
+from wandb import magic
 import numpy as np
 
 import random
